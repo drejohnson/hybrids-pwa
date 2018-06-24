@@ -1,0 +1,21 @@
+{
+  "name": "Lit PWA",
+  "short_name": "Lit PWA",
+  "description": "App description",
+  "theme_color": "#6200ee",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "images/manifest/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "images/manifest/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
