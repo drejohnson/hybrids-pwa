@@ -8,6 +8,7 @@
 * [x] State Management - [Redux](https://redux.js.org/)
 * [x] Routing - [PWA Helpers](https://github.com/Polymer/pwa-helpers)
 * [x] Document Head Tags - [Headful](https://github.com/troxler/headful)
+* [x] GraphQL - [Apollo Client](https://github.com/apollographql/apollo-client)
 * [x] Bunder - [Webpack](https://webpack.js.org/)
 
 ## Quick start
@@ -18,6 +19,5 @@
 
 ## TODO
 
-* [ ] Add [Apollo Client](https://github.com/apollographql/apollo-client)
 * [ ] Convert to [TypeScript](https://github.com/Microsoft/TypeScript)
 * [ ] Add styles/theme
