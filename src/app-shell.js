@@ -1,7 +1,6 @@
 import { html, define } from 'hybrids';
 import connect from './connect';
 import { store } from './store';
-import meta from './meta';
 
 import './components/simple-counter';
 
@@ -84,12 +83,10 @@ const AppShell = {
       </nav>
     </header>
     <main class="main-content">
-      ${page === 'home' &&
-        html`<home-view class="page" title=${title}></home-view>`}
+      ${page === 'home' && html`<home-view class="page"></home-view>`}
       ${page === 'about' && html`<about-view class="page"></about-view>`}
       ${page === 'notFound' &&
         html`<not-found-view class="page"></not-found-view>`}
-
     </main> 
   `;
   }
