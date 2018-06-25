@@ -12,8 +12,6 @@ const helloQuery = gql`
   }
 `;
 
-let initClient = apollo(client);
-
 const HomeView = {
   title: 'Home',
   description: 'Home Page',
@@ -37,7 +35,7 @@ const HomeView = {
     <div>
       ${html.resolve(
         getHello
-          .then(value => html`<h2>${value.hello}</h2>`)
+          .then(data => html`<h2>${data.hello}</h2>`)
           .catch(() => html`<div>Error!</div>`),
         html`Loading...`
       )}
