@@ -6,9 +6,13 @@ import apollo from '../apollo';
 
 import '../components/simple-counter';
 
-const helloQuery = gql`
+const postQuery = gql`
   {
-    hello
+    posts {
+      id
+      title
+      text
+    }
   }
 `;
 
@@ -16,8 +20,8 @@ const HomeView = {
   title: 'Home',
   description: 'Home Page',
   head: meta(),
-  getHello: apollo(client)(helloQuery),
-  render: ({ getHello, title }) => {
+  posts: apollo(client)(postQuery),
+  render: ({ posts, title }) => {
     return html`
     <style>
       h1, h2 {
@@ -34,8 +38,12 @@ const HomeView = {
     <h1>${title}</h1> 
     <div>
       ${html.resolve(
-        getHello
-          .then(data => html`<h2>${data.hello}</h2>`)
+        posts
+          .then(data => {
+            return html`${data.posts.map(({ id, title }) =>
+              html`<h2>${title}</h2>`.key(id)
+            )}`;
+          })
           .catch(() => html`<div>Error!</div>`),
         html`Loading...`
       )}
