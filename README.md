@@ -17,6 +17,10 @@
 * For dev server: run `yarn dev` or `npm run dev`, from project root. The app should be running at: http://localhost:8080.
 * To build frontend run: `yarn build` or `npm run build` from project root. Run `yarn start` or `npm start` to start app.
 
+## Example
+
+> Check out the live [Demo](https://hybrids-pwa.firebaseapp.com)
+
 ## TODO
 
 * [ ] Convert to [TypeScript](https://github.com/Microsoft/TypeScript)
