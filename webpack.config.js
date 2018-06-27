@@ -35,25 +35,6 @@ module.exports = {
         test: /\.js$/,
         type: 'javascript/esm',
         exclude: /node_modules/
-        // use: [
-        //   {
-        //     loader: 'babel-loader',
-        //     options: {
-        //       presets: [
-        //         [
-        //           '@babel/preset-env',
-        //           {
-        //             targets: {
-        //               browsers: ['>0.25%', 'not ie 11', 'not op_mini all'],
-        //               esmodules: true
-        //             }
-        //           }
-        //         ]
-        //       ],
-        //       plugins: [require('@babel/plugin-syntax-dynamic-import')]
-        //     }
-        //   }
-        // ]
       },
       {
         test: /\.(jpe?g|png|gif|svg)$/,
