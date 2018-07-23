@@ -7,6 +7,6 @@ export default (store, mapState) => ({
     installRouter(location =>
       store.dispatch(navigate(window.decodeURIComponent(location.pathname)))
     );
-    store.subscribe(invalidate);
+    return store.subscribe(invalidate);
   }
 });
