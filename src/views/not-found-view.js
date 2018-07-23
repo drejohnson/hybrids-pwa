@@ -19,4 +19,5 @@ const NotFoundView = {
   `
 };
 
-export default define('not-found-view', NotFoundView);
+define('not-found-view', NotFoundView);
+export default NotFoundView;

@@ -53,4 +53,5 @@ const HomeView = {
   }
 };
 
-export default define('home-view', HomeView);
+define('home-view', HomeView);
+export default HomeView;

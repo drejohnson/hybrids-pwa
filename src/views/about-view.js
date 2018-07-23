@@ -19,4 +19,5 @@ const AboutView = {
   `
 };
 
-export default define('about-view', AboutView);
+define('about-view', AboutView);
+export default AboutView;
